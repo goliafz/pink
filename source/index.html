@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+<header class="page-header">
+  <a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink">Pink</a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item current_item"><a href="">главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html ">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">конкурс</a></li>
+        <li class="main-nav__item"><a href="">html academy</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="page-header__logotype"><h1>Pink - взгляните на жизнь иначе!</h1></div>
+  <div class="page-header__download">
+    <button class="page-header__download_button"></button>
+    <img src="img/apple-logo.png" alt="Логотип Apple">
+    <img src="img/android-logo.png" alt="Логотип Android">
+    <img src="img/microsoft-logo.png" alt="Логотип Microsoft">
+    <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </div>
+</header>
+<main class="page-main">
+<section class="page-advantages">
+  <h3 class="page-advantages__h3">Устали от серости мегаполиса?<br>Нам есть, что вам
+    предложить!</h3>
+    <ul class="page-advantages__list">
+      <li class="page-advantages__item">
+        <img src="" alt="" class="page-advantages__img">
+        <p class="page-advantages__title">Поднимает настроение</p>
+        <p class="page-advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </li>
+      <li class="page-advantages__item">
+        <img src="" alt="" class="page-advantages__img">
+        <p class="page-advantages__title">Меняет мир вокруг</p>
+        <p class="page-advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </li>
+      <li class="page-advantages__item">
+        <img src="" alt="" class="page-advantages__img">
+        <p class="page-advantages__title">Заводит новых друзей</p>
+        <p class="page-advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </li>
+    </ul>
+</section>
+<section class="page-review">
+  <div class="page-review__slider">
+    <ul class="page-review__list">
+      <li class="page-review__item">
+        <p class="page-review__name-author">Николай Петров</p>
+        <p class="page-review__about-author"></p>
+        <p class="page-review__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+    </ul>
+    <ul class="page-review__nav-list">
+      <li class="page-review__nav-item">1</li>
+      <li class="page-review__nav-item">2</li>
+      <li class="page-review__nav-item">3</li>
+    </ul>
+  </div>
+</section>
+<section class="page-rate">
+  <div class="page-rate__slider">
+    <ul class="page-rate__list">
+      <li class="page-rate__item">
+        <p class="page-rate__title"></p>
+        <p class="page-rate__pink-filter"></p>
+        <p class="page-rate__smile"></p>
+        <p class="page-rate__comments></p>
+      </li>
+    </ul>
+    <ul class="page-review__nav-list nav-rate">
+      <li class="page-review__nav-item">1</li>
+      <li class="page-review__nav-item">2</li>
+      <li class="page-review__nav-item">3</li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__contacts">
+    <h3 class="page-footer__h3">Остались вопросы?
+      Свяжитесь с нами!</h3>
+      <p class="page-footer__contacts-title">Звоните:</p>
+      <a href="" class="page-footer__contacts-link">+7 (812) 555-66-66</a>
+      <p class="page-footer__contacts-title">Пишите:</p>
+      <a href="" class="page-footer__contacts-link">mail@htmlacademy.ru</a>
+      <p class="page-footer__contacts-title">Приезжайте в гости:</p>
+      <a href="" class="page-footer__contacts-address">ул. Большая
+        Конюшенная, 19/8</a>
+        <div class="page-footer__map"></div>
+  </div>
+  <div class="page-footer__logo"></div>
+  <div class="page-footer_social-link">
+    <ul class="page-footer_social-link__list">
+      <li class="page-footer_social-link__item"></li>
+      <li class="page-footer_social-link__item"></li>
+      <li class="page-footer_social-link__item"></li>
+    </ul>
+  </div>
+  <div class="page-footer__devops">Разработано</div>
+</footer>
   </body>
 </html>
