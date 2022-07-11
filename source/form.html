@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Пинк</title>
   </head>
   <body class="page__body">
@@ -18,12 +19,11 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__logotype"><h1>Конкурс на самое безбашенное путешествие с Пинк</h1></div>
+  <h1 class="page-header__logotype mod--line">Конкурс на самое безбашенное путешествие с Пинк</h1>
 </header>
-<main class="page-main">
-  <section class="page-form">
-    <form action="#">
-      <p class="page-main__description_text">Поделитесь своей историей и получите
+<main class="page-form">
+    <form class="page-form__section" action="#">
+      <p class="page-form__description_text">Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!</p>
         <label for="surname" class="page-form__label">ФАМИЛИЯ:
@@ -36,6 +36,7 @@
           <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
         </label>
         <div class="page-form__color-form">
+          <p class="page__form-title">Ваши безбашенные достижения в путешествии</p>
           <label class="page-form__travel-success">
             <input type="checkbox" name="travel-success" id="travel-success" checked><option name="travel-success" value="Сделал селфи с акулой">Сделал селфи с акулой</option>
           </label>
@@ -59,6 +60,7 @@
           <input type="text" name="email" id="email" placeholder="Введите почту *">
         </label>
         <div class="page-form__color-form">
+          <p class="page__form-title">С каким приложением путешествовали?</p>
           <label class="page-form__travel-app">
             <input type="radio" name="travel-app" id="travel-app" checked><option name="travel-success" value="Pink для iOS">Pink для iOS</option>
           </label>
@@ -69,27 +71,15 @@
             <input type="radio" name="travel-app" id="travel-app"><option name="travel-success" value="Windows Phone">Windows Phone</option>
           </label>
         </div>
+        <p class="page__form-title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
         <label class="page-form__your-emotions">
           <textarea name="your-emotions" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </label>
         <button type="button" class="page-form__button">Отправить форму</button>
-        <span class="page-form__disclaimer">* — обязательные поля</span>
+        <span class="page-form__disclaimer"><span class="page-form__disclaimer--pink">*</span> — обязательные поля</span>
     </form>
-  </section>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__contacts">
-    <h3 class="page-footer__h3">Остались вопросы?
-      Свяжитесь с нами!</h3>
-      <p class="page-footer__contacts-title">Звоните:</p>
-      <a href="" class="page-footer__contacts-link">+7 (812) 555-66-66</a>
-      <p class="page-footer__contacts-title">Пишите:</p>
-      <a href="" class="page-footer__contacts-link">mail@htmlacademy.ru</a>
-      <p class="page-footer__contacts-title">Приезжайте в гости:</p>
-      <a href="" class="page-footer__contacts-address">ул. Большая
-        Конюшенная, 19/8</a>
-        <div class="page-footer__map"></div>
-  </div>
   <div class="page-footer__logo"></div>
   <div class="page-footer_social-link">
     <ul class="page-footer_social-link__list">

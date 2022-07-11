@@ -1,0 +1,39 @@
+.page-header {
+  background-color: #1d2631;
+}
+
+.page-header__logotype {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: $color_text_light;
+}
+
+.mod--line {
+  line-height: 33px;
+}
+
+.page-header__download {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color_text_light;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+.main-nav__item a {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_text_light;
+  text-transform: uppercase;
+  text-decoration: none;
+}

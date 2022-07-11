@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «{{projectTitle}}» 
 
-* Студент: [Марк Фролов](https://up.htmlacademy.ru/adaptive/25/user/1958877).
-* Наставник: `Неизвестно кто`.
+* Студент: [{{userName}}]({{userProfile}}).
+* Наставник: `Неизвестно`.
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1958877-pink-25) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
 
@@ -54,5 +54,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[check-image]: https://github.com/htmlacademy-adaptive/1958877-pink-25/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1958877-pink-25/actions
+[check-image]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/workflows/Project%20check/badge.svg?branch=master
+[check-url]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/actions

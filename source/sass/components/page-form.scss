@@ -1,0 +1,51 @@
+.page-form__section {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main_text_color;
+}
+.page-form__color-form {
+  background-color: $background_special;
+}
+
+.page-form__description_text {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main_text_color;
+}
+
+.page-form__label {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color_text_pink;
+}
+
+.page__form-title {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color_text_pink;
+}
+
+.page-form__disclaimer {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main_text_color;
+}
+
+.page-form__disclaimer--pink {
+  color: $color_text_pink;
+}
