@@ -1,3 +1,21 @@
 .page-rate {
   background-color: $background_special;
 }
+
+.page-rate__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop_width) {
+    height: 110px;
+  }
+}
+
+.page-rate__item {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}

@@ -10,6 +10,12 @@ $color_text_pink: #D22856;
 
 $background_special: #f2f2f2;
 
+$tablet_width: 660px;
+
+$desktop_width: 800px;
+
+$mobile_width_only: 659px;
+
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -36,3 +42,7 @@ $background_special: #f2f2f2;
 
 $font-family: "Open Sans";
 $font-style: normal;
+
+.visually-hidden {
+
+}

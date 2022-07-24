@@ -1,3 +1,22 @@
+.page-catalog__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  margin: 0 20px;
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop_width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 54px;
+    column-gap: 20px;
+  }
+}
+
 .page-catalog__block {
   background-color: $background_special;
 }
@@ -45,4 +64,50 @@
   font-size: 12px;
   line-height: 24px;
   color: $color_text_pink;
+}
+
+.page-catalog__app-posting {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-areas: "app-posting-img"
+  "list-filters"
+  "page-catalog__range"
+  "app-posting-submit"
+  "app-posting-reset";
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "app-posting-img list-filters page-catalog__range"
+    "app-posting-img app-posting-submit app-posting-submit"
+    "app-posting-img app-posting-reset app-posting-reset";
+
+  }
+
+  @media (min-width: $desktop_width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "app-posting-img list-filters page-catalog__range"
+  "app-posting-img app-posting-submit app-posting-reset";
+
+  }
+}
+
+.page-catalog__app-posting-img {
+  grid-area: app-posting-img;
+}
+
+.page-catalog__list-filters {
+  grid-area: list-filters;
+}
+
+.page-catalog__range {
+  grid-area: page-catalog__range;
+}
+
+.page-catalog__app-posting-submit {
+  grid-area: app-posting-submit;
+}
+
+.page-catalog__app-posting-reset {
+  grid-area: app-posting-reset;
 }

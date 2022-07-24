@@ -1,3 +1,7 @@
 .main-nav {
-  background-color: #283645;
+  background-color: $main_text_color;
+
+  @media (min-width: $desktop_width) {
+    background-color: transparent;
+  }
 }

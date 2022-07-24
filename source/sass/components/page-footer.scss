@@ -1,3 +1,39 @@
+.page-footer__contacts-link {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color_text_pink;
+  text-decoration: none;
+}
+
+.page-footer__contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "contacts_title"
+  "contacts_call"
+  "contacts_write"
+  "contacts_address";
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contacts_title contacts_title"  "contacts_call contacts_write"
+  "contacts_address contacts_address";
+  }
+
+  @media (min-width: $desktop_width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "contacts_title contacts_title contacts_title"  "contacts_call contacts_write contacts_address";
+  }
+}
+
+.page-footer--text-br {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
 .page-footer__h3 {
   font-family: $font-family;
   font-style: $font-style;
@@ -5,6 +41,18 @@
   font-size: 24px;
   line-height: 120%;
   color: $main_text_color;
+  text-align: center;
+  grid-area: contacts_title;
+
+  @media (min-width: $tablet_width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .page-footer__contacts-title {
@@ -16,6 +64,44 @@
   color: $main_text_color;
 }
 
+.contacts--call {
+  grid-area: contacts_call;
+}
+
+.contacts--write{
+  grid-area: contacts_write;
+}
+
+.contacts--address {
+  grid-area: contacts_address;
+}
+
+.page-footer__social {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "page-footer__logo"
+  "page-footer_social-link"
+  "page-footer__devops";
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "page-footer__logo page-footer_social-link page-footer__devops";
+  }
+
+  @media (min-width: $desktop_width) {
+    height: 110px;
+  }
+}
+
+.page-footer__logo {
+  grid-area: page-footer__logo;
+}
+
+.page-footer_social-link {
+  grid-area: page-footer_social-link;
+}
+
 .page-footer__devops {
   font-family: $font-family;
   font-style: $font-style;
@@ -23,14 +109,5 @@
   font-size: 14px;
   line-height: 18px;
   color: $main_text_color;
-}
-
-.page-footer__contacts-link {
-  font-family: $font-family;
-  font-style: $font-style;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  color: $color_text_pink;
-  text-decoration: none;
+  grid-area: page-footer__devops;
 }

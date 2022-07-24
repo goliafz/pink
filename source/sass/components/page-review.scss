@@ -1,3 +1,16 @@
+.page-review__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet_width) {
+
+  }
+
+  @media (min-width: $desktop_width) {
+
+  }
+}
+
 .page-review__name-author {
   font-family: $font-family;
   font-style: $font-style;
@@ -5,6 +18,39 @@
   font-size: 18px;
   line-height: 30px;
   color: $color_text_dark;
+  text-align: center;
+
+  @media (min-width: $tablet_width) {
+    order: 2;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop_width) {
+    order: 2;
+    font-size: 24px;
+}
+}
+
+.page-review__about-author {
+  display: none;
+  text-align: center;
+
+  @media (min-width: $tablet_width) {
+    order: 3;
+    display: initial;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $main_text_color;
+  }
+
+  @media (min-width: $desktop_width) {
+    order: 3;
+    display: initial;
+    font-size: 18px;
+  }
 }
 
 .page-review__review {
@@ -14,4 +60,13 @@
   font-size: 14px;
   line-height: 30px;
   color: $main_text_color;
+  text-align: center;
+
+  @media (min-width: $tablet_width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop_width) {
+
+  }
 }
