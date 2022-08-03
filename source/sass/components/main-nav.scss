@@ -1,7 +1,212 @@
 .main-nav {
   background-color: $main_text_color;
+  z-index: 1;
 
   @media (min-width: $desktop_width) {
     background-color: transparent;
   }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop_width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav--opened.main-nav__wrapper {
+  background-color: $main_text_color;
+
+  @media (min-width: $desktop_width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  background-color: $main_text_color;
+
+
+  @media (min-width: $desktop_width) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-right: 130px;
+    margin-top: 48px;
+  }
+}
+
+.main-nav__item a {
+  position: relative;
+  display: block;
+  justify-content: center;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_text_light;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  border-top: 1px solid #636d79;
+  border-bottom: 1px solid #000000;
+
+  @media (min-width: $desktop_width) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color_text_light;
+    text-transform: none;
+    text-decoration: none;
+    margin-right: 78px;
+    padding: 0;
+    border: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color_text_pink;
+  }
+
+  &:active {
+    @media (max-width: $tablet_width) {
+      color: transparentize($color_text_pink, 0.7);
+      //opacity: 0.3;
+    }
+
+    @media (min-width: $tablet_width) {
+      color: transparentize($color_text_light, 0.7);
+      //opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item:last-of-type a {
+  @media (min-width: $desktop_width) {
+    margin-right: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: $tablet_width) {
+    height: 110px;
+  }
+
+  @media (min-width: $desktop_width) {
+    height: 110px;
+    //display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 0;
+  margin-right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+
+  @media (min-width: $desktop_width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $color_text_pink;
+  box-shadow: 0 10px 0 0 $color_text_pink, 0 20px 0 0 $color_text_pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $color_text_pink;
+  box-shadow: 0 10px 0 0 $color_text_pink, 0 20px 0 0 $color_text_pink;
+  opacity: 0.3;
+}
+
+@media (max-width: $desktop_width) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: $main_text_color;
+
+  @media (min-width: $desktop_width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    width: 29px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $color_text_pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $color_text_pink;
+    opacity: 0.3;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  //display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  //position: static;
 }

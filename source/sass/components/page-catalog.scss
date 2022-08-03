@@ -19,6 +19,37 @@
 
 .page-catalog__block {
   background-color: $background_special;
+  position: relative;
+}
+
+.page-catalog__block:first-of-type:before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 36px;
+  color: $color_text_light;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color_text_pink;
+  width: 140px;
+  height: 36px;
+  z-index: 2;
+
+}
+
+.page-catalog__image {
+  width: 100%;
+  height: auto;
+}
+
+.first--block .page-catalog__image {
+
 }
 
 .page-catalog__description_text {
@@ -28,9 +59,14 @@
   font-size: 14px;
   line-height: 30px;
   color: $main_text_color;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .page-catalog__author {
+  position: relative;
+
   font-family: $font-family;
   font-style: $font-style;
   font-weight: 700;
@@ -88,7 +124,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "app-posting-img list-filters page-catalog__range"
   "app-posting-img app-posting-submit app-posting-reset";
-
   }
 }
 

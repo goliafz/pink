@@ -7,28 +7,29 @@
     <title>Пинк</title>
   </head>
   <body class="page__body">
-<header class="page-header">
-    <div class="main-nav__wrapper">
-      <a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink">Pink</a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item current_item"><a href="">Главная</a></li>
-        <li class="main-nav__item"><a href="catalog.html ">Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="">HTML Academy</a></li>
-      </ul>
+    <header class="page-header">
+      <div class="main-nav__wrapper main-nav--closed">
+          <div class="page-header__logo--wrapper"><a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink"></a></div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item current_item"><a href="/">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html ">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+      </nav>
     </div>
-  </nav>
-  <h1 class="page-header__logotype mod--line">Фотографии
-    пользователей</h1>
-</header>
+      <div class="page-header__more">
+      <h1 class="page-header__logotype catalog--logo">Фотографии пользователей</h1>
+    </div>
+    </header>
 <main class="page-catalog">
   <p class="page-catalog__description_text">Взгляните на фотографии, которые выкладывают пользователи!
     Видите, как не хватает ваших?</p>
     <div class="page-catalog__wrapper">
-      <div class="page-catalog__block">
-        <img src="" alt="" class="page-catalog__image" width="280" height="180">
+      <div class="page-catalog__block first--block">
+        <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
         <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
         <p class="page-catalog__comment">Прыгать или нет? Напишите в
           комментарии свой совет и
@@ -37,7 +38,7 @@
         <p class="page-catalog__like">Нравится: 215</p>
     </div>
     <div class="page-catalog__block">
-      <img src="" alt="" class="page-catalog__image" width="280" height="180">
+      <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
       <h3 class="page-catalog__author">Левон</h3><span class="page-catalog__date">(5 минут назад)</span>
       <p class="page-catalog__comment">Прыгать или нет? Напишите в
         комментарии свой совет и
@@ -46,7 +47,7 @@
       <p class="page-catalog__like">Нравится: 215</p>
   </div>
   <div class="page-catalog__block">
-    <img src="" alt="" class="page-catalog__image" width="280" height="180">
+    <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
     <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
     <p class="page-catalog__comment">Прыгать или нет? Напишите в
       комментарии свой совет и
@@ -55,7 +56,7 @@
     <p class="page-catalog__like">Нравится: 215</p>
 </div>
 <div class="page-catalog__block">
-  <img src="" alt="" class="page-catalog__image" width="280" height="180">
+  <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
   <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
   <p class="page-catalog__comment">Прыгать или нет? Напишите в
     комментарии свой совет и
@@ -64,7 +65,7 @@
   <p class="page-catalog__like">Нравится: 215</p>
 </div>
 <div class="page-catalog__block">
-  <img src="" alt="" class="page-catalog__image" width="280" height="180">
+  <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
   <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
   <p class="page-catalog__comment">Прыгать или нет? Напишите в
     комментарии свой совет и
@@ -73,7 +74,7 @@
   <p class="page-catalog__like">Нравится: 215</p>
 </div>
 <div class="page-catalog__block">
-  <img src="" alt="" class="page-catalog__image" width="280" height="180">
+  <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
   <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
   <p class="page-catalog__comment">Прыгать или нет? Напишите в
     комментарии свой совет и
@@ -82,7 +83,7 @@
   <p class="page-catalog__like">Нравится: 215</p>
 </div>
 <div class="page-catalog__block">
-  <img src="" alt="" class="page-catalog__image" width="280" height="180">
+  <img src="img/photo-1-mobile.jpg" alt="" class="page-catalog__image">
   <h3 class="page-catalog__author">Анна</h3><span class="page-catalog__date">(5 минут назад)</span>
   <p class="page-catalog__comment">Прыгать или нет? Напишите в
     комментарии свой совет и
@@ -118,5 +119,27 @@
   <div class="page-footer__devops">Разработано</div>
 </section>
 </footer>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navMain_wrapper = document.querySelector('.main-nav__wrapper');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('.main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain_wrapper.classList.contains('main-nav--closed') && navMain.classList.contains('main-nav--closed')) {
+      navMain_wrapper.classList.remove('main-nav--closed');
+      navMain_wrapper.classList.add('main-nav--opened');
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain_wrapper.classList.add('main-nav--closed');
+      navMain_wrapper.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+</script>
   </body>
 </html>

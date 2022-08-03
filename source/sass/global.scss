@@ -6,7 +6,7 @@ $color_text_light: #ffffff;
 
 $color_text_dark: #000000;
 
-$color_text_pink: #D22856;
+$color_text_pink: #d22856;
 
 $background_special: #f2f2f2;
 
@@ -44,5 +44,12 @@ $font-family: "Open Sans";
 $font-style: normal;
 
 .visually-hidden {
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

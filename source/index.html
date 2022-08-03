@@ -8,46 +8,52 @@
   </head>
   <body class="page__body">
 <header class="page-header">
-    <div class="main-nav__wrapper">
-      <div class="page-header__logo--wrapper"><a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink">Pink</a></div>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><svg  class="main-nav__toggle--svg" aria-hidden="true" focusable="false" width="50" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"></svg></button>
+  <div class="main-nav__wrapper main-nav--closed">
+      <div class="page-header__logo--wrapper"><a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink"></a></div>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item current_item"><a href="">Главная</a></li>
+        <li class="main-nav__item current_item"><a href="/">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html ">Фотографии</a></li>
         <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="">HTML Academy</a></li>
       </ul>
-    </div>
   </nav>
+</div>
   <div class="page-header__more">
-  <h1 class="page-header__logotype">Pink - взгляните на жизнь иначе!</h1>
+  <h1 class="page-header__logotype">Взгляните на жизнь иначе!</h1>
+  <div class="page-header__lototype--overlay">
+  <img src="img/phone.png" alt="Изображение телефона" class="page-header__logotype--img_phone">
+  <img src="img/screen.png" alt="Изображение экрана телефона" class="page-header__logotype--img_screen">
+</div>
+  <button class="page-header__download_button">Скачать приложение</button>
   <div class="page-header__download">
-    <button class="page-header__download_button"></button>
-    <img src="img/apple-logo.png" alt="Логотип Apple">
-    <img src="img/android-logo.png" alt="Логотип Android">
-    <img src="img/microsoft-logo.png" alt="Логотип Microsoft">
-    <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <div class="page-header__download__images">
+      <img src="img/apple-logo.png" alt="Логотип Apple" class="page-header__download--apple" width="47px" height="56px">
+      <img src="img/android-logo.png" alt="Логотип Android"class="page-header__download--android" width="43px" height="47px">
+      <img src="img/microsoft-logo.png" alt="Логотип Microsoft"class="page-header__download--microsoft" width="44px" height="41px">
+  </div>
+    <p class="page-header__download--desctiption">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   </div>
 </div>
 </header>
 <main class="page-main">
 <section class="page-advantages">
-  <h3 class="page-advantages__h3">Устали от серости мегаполиса?<br>Нам есть, что вам
-    предложить!</h3>
+  <h3 class="page-advantages__h3"><p>Устали от серости мегаполиса?</p><p>Нам есть, что вам
+    предложить!</p></h3>
     <ul class="page-advantages__list">
       <li class="page-advantages__item">
-        <img src="" alt="" class="page-advantages__img">
+        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Поднимает настроение</p>
         <p class="page-advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </li>
       <li class="page-advantages__item">
-        <img src="" alt="" class="page-advantages__img">
+        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Меняет мир вокруг</p>
         <p class="page-advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </li>
       <li class="page-advantages__item">
-        <img src="" alt="" class="page-advantages__img">
+        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Заводит новых друзей</p>
         <p class="page-advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </li>
@@ -127,5 +133,27 @@
   <div class="page-footer__devops">Разработано</div>
 </section>
 </footer>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navMain_wrapper = document.querySelector('.main-nav__wrapper');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('.main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain_wrapper.classList.contains('main-nav--closed') && navMain.classList.contains('main-nav--closed')) {
+      navMain_wrapper.classList.remove('main-nav--closed');
+      navMain_wrapper.classList.add('main-nav--opened');
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain_wrapper.classList.add('main-nav--closed');
+      navMain_wrapper.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+</script>
   </body>
 </html>
