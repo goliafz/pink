@@ -14,18 +14,22 @@
   grid-template-areas: "contacts_title"
   "contacts_call"
   "contacts_write"
-  "contacts_address";
+  "contacts_address"
+  "map";
   margin: 0 20px;
 
   @media (min-width: $tablet_width) {
     grid-template-columns: 1fr 1fr;
   grid-template-areas: "contacts_title contacts_title"  "contacts_call contacts_write"
-  "contacts_address contacts_address";
+  "contacts_address contacts_address"
+  "map map";
   }
 
   @media (min-width: $desktop_width) {
     grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "contacts_title contacts_title contacts_title"  "contacts_call contacts_write contacts_address";
+  grid-template-areas: "contacts_title contacts_title contacts_title"
+  "contacts_call contacts_write contacts_address"
+  "map map map";
   }
 }
 
@@ -63,6 +67,7 @@
   font-size: 18px;
   line-height: 25px;
   color: $main_text_color;
+  z-index: 2;
 }
 
 .contacts--call {
@@ -81,20 +86,21 @@
 }
 
 .page-footer__social {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
-  grid-template-areas: "page-footer__logo"
-  "page-footer_social-link"
-  "page-footer__devops";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet_width) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "page-footer__logo page-footer_social-link page-footer__devops";
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px 40px 20px;
+    // margin-top создается margin-bottom page-footer__map--img
   }
 
   @media (min-width: $desktop_width) {
-    height: 110px;
+    margin: 0 130px 75px 130px;
   }
 }
 
@@ -105,10 +111,26 @@
 .page-footer_social-link__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  column-gap: 10px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .page-footer_social-link {
   grid-area: page-footer_social-link;
+}
+
+.page-footer_social-link__item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color_text_light;
+  //opacity: 0.1;
+  border: 3px solid transparentize($main_text_color, 0.9);
+  border-radius: 50%;
 }
 
 .page-footer__devops {
@@ -118,5 +140,63 @@
   font-size: 14px;
   line-height: 18px;
   color: $main_text_color;
-  grid-area: page-footer__devops;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.page-footer__map {
+  position: relative;
+  grid-area: map;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 660px;
+
+  @media (min-width: $tablet_width) {
+    max-width: 1200px;
+  }
+
+}
+
+.page-footer__map::before {
+  position: absolute;
+  content: "";
+  background: url("../img/map marker.svg");
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+  width: 36px;
+  height: 36px;
+  z-index: 1;
+}
+
+.page-footer__map::after {
+  position: absolute;
+  content: "";
+  background: url("../img/triangle white footer.svg") no-repeat;
+  top: -50px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  height: 123px;
+  z-index: 0;
+}
+
+.page-footer__map--img {
+  margin-top: 41px;
+  margin-bottom: 40px;
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop_width) {
+    margin-bottom: 74px;
+  }
 }

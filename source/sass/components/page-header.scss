@@ -1,10 +1,36 @@
 .page-header {
-  background-color: #1d2631;
+  //background-color: #1d2631;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: url("../img/screen_phone_mobile.png") 50% 176px / auto 286px no-repeat,
+  #1d2631 url("../img/back mobile.jpg") 50% 0% / auto 462px no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/screen_phone_mobile@2x.png") 50% 176px / auto 286px no-repeat,
+  #1d2631 url("../img/back mobile@2x.jpg") 50% 0% / auto 462px no-repeat;
+  }
+
+  @media (min-width: $tablet_width) {
+    background: url("../img/screen_phone_tablet.png") 50% 100% no-repeat,
+    #1d2631 url("../img/back tablet.jpg") 50% 0% / auto 729px no-repeat;
+    min-height: 729px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/screen_phone_tablet@2x.png") 50% 100% / auto 545px no-repeat,
+    #1d2631 url("../img/back tablet@2x.jpg") 50% 0% / auto 729px no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop_width) {
+    background: url("../img/screen_phone_desktop.png") 50% 100% no-repeat,
+    #1d2631 url("../img/back desktop.jpg") 50% 0% no-repeat;
+    min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/screen_phone_desktop@2x.png") 50% 100% / auto 645px no-repeat,
+    #1d2631 url("../img/back desktop@2x.jpg") 50% 0% / auto 853px no-repeat;
+    }
+  }
 }
 
 .page-header__logo {
@@ -16,8 +42,55 @@
     max-width: 277px;
     justify-self: flex-end; // не работает
   }
+}
+
+.page-header__more {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+
+  @media (min-width: $tablet_width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "page-header__logotype page-header__lototype--overlay"
+    "page-header__download_button page-header__lototype--overlay"
+    "page-header__download page-header__lototype--overlay";
+    }
+
+  @media (min-width: $desktop_width) {
+
+    }
+  }
+
+.page-header__lototype--overlay {
+  position: relative;
+  //background-image: url("../img/screen_phone_mobile.png");
+  background-repeat: no-repeat;
+  //background-position: 50% 100%;
+  width: 320px;
+  height: 286px;
+  background-size: auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet_width) {
+
+    grid-area: page-header__lototype--overlay;
+    }
 
   }
+
+  .page-header__logotype--img_phone {
+    margin-bottom: 34px;
+  }
+
+
+.page-header__logotype--img_screen {
+  position: absolute;
+  top: 33px;
+  left: 32.7%;
+}
 
 .page-header__logotype {
   font-family: $font-family;
@@ -30,6 +103,21 @@
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+  max-width: 280px;
+
+  @media (min-width: $tablet_width) {
+    grid-area: page-header__logotype;
+    font-size: 40px;
+    margin-top: 102px;
+    margin-bottom: 39px;
+    max-width: 230px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 300px;
+  }
 }
 
 .catalog--logo {
@@ -46,6 +134,11 @@
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $tablet_width) {
+    grid-area: page-header__download;
+    margin-bottom: 38px;
+  }
 }
 
 .page-header__download__images {
@@ -83,6 +176,12 @@
 
   @media (min-width: $tablet_width) {
     width: 300px;
+    margin-bottom: 46px;
+    grid-area: page-header__download_button;
+  }
+  @media (min-width: $tablet_width) {
+
+
   }
 }
 
@@ -96,27 +195,4 @@
   @media (min-width: $desktop_width) {
     height: 110px;
   }
-}
-
-.page-header__more {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-}
-
-.page-header__lototype--overlay {
-  position: relative;
-}
-
-.page-header__logotype--img_phone {
-  margin-bottom: 34px;
-}
-
-
-.page-header__logotype--img_screen {
-  position: absolute;
-  top: 33px;
-  left: 32.7%;
 }

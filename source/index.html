@@ -4,12 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/ico//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/ico//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/ico//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/ico//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/ico//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico//favicon-16x16.png">
+    <link rel="manifest" href="img/ico//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ico//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Пинк</title>
   </head>
   <body class="page__body">
 <header class="page-header">
   <div class="main-nav__wrapper main-nav--closed">
-      <div class="page-header__logo--wrapper"><a href="/" class="page-header__logo"><img src="img/pink.svg" width="74" height="23" alt="Логотип Pink"></a></div>
+      <div class="page-header__logo--wrapper"><a href="/" class="page-header__logo">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+        <img src="img/pink.svg" alt="Логотип Pink">
+      </picture></a></div>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
@@ -21,39 +45,35 @@
   </nav>
 </div>
   <div class="page-header__more">
-  <h1 class="page-header__logotype">Взгляните на жизнь иначе!</h1>
-  <div class="page-header__lototype--overlay">
-  <img src="img/phone.png" alt="Изображение телефона" class="page-header__logotype--img_phone">
-  <img src="img/screen.png" alt="Изображение экрана телефона" class="page-header__logotype--img_screen">
-</div>
-  <button class="page-header__download_button">Скачать приложение</button>
-  <div class="page-header__download">
-    <div class="page-header__download__images">
-      <img src="img/apple-logo.png" alt="Логотип Apple" class="page-header__download--apple" width="47px" height="56px">
-      <img src="img/android-logo.png" alt="Логотип Android"class="page-header__download--android" width="43px" height="47px">
-      <img src="img/microsoft-logo.png" alt="Логотип Microsoft"class="page-header__download--microsoft" width="44px" height="41px">
+    <h1 class="page-header__logotype">Взгляните на жизнь иначе!</h1>
+    <div class="page-header__lototype--overlay">
+
   </div>
-    <p class="page-header__download--desctiption">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-  </div>
+    <button class="page-header__download_button">Скачать приложение</button>
+    <div class="page-header__download">
+      <div class="page-header__download__images">
+        <img src="img/apple-logo.png" alt="Логотип Apple" class="page-header__download--apple" width="47px" height="56px">
+        <img src="img/android-logo.png" alt="Логотип Android"class="page-header__download--android" width="43px" height="47px">
+        <img src="img/microsoft-logo.png" alt="Логотип Microsoft"class="page-header__download--microsoft" width="44px" height="41px">
+    </div>
+      <p class="page-header__download--desctiption">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
 </div>
 </header>
 <main class="page-main">
 <section class="page-advantages">
-  <h3 class="page-advantages__h3"><p>Устали от серости мегаполиса?</p><p>Нам есть, что вам
+  <h3 class="page-advantages__h3"><p>Устали от серости мегаполиса?</p><p>Нам есть, что вам<br>
     предложить!</p></h3>
     <ul class="page-advantages__list">
       <li class="page-advantages__item">
-        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Поднимает настроение</p>
         <p class="page-advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </li>
       <li class="page-advantages__item">
-        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Меняет мир вокруг</p>
         <p class="page-advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </li>
       <li class="page-advantages__item">
-        <img src="img/iphone 3.png" alt="" class="page-advantages__img">
         <p class="page-advantages__title">Заводит новых друзей</p>
         <p class="page-advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </li>
@@ -77,32 +97,64 @@
 </section>
 <section class="page-rate">
   <div class="page-rate__slider">
-    <ul class="page-rate__list">
+    <!-- <ul class="page-rate__list">
       <li class="page-rate__item">
-        <p class="page-rate__title">СТАНДАРТ <span class="page-rate__price">3,99 USD</span></p>
-        <p class="page-rate__pink-filter">Розовый фильтр</p>
-        <p class="page-rate__smile">Смайлики</p>
-        <p class="page-rate__comments">Комментарии</p>
+        <div class="page-rate__title page-rate__title--empty">СТАНДАРТ<span class="page-rate__price">3,99 USD</span></div>
+        <div class="page-rate__pink-filter">Розовый фильтр</div>
+        <div class="page-rate__smile">Смайлики</div>
+        <div class="page-rate__comments">Комментарии</div>
       </li>
       <li class="page-rate__item">
-        <p class="page-rate__title">СТАНДАРТ <span class="page-rate__price">3,99 USD</span></p>
-        <p class="page-rate__pink-filter">Розовый фильтр</p>
-        <p class="page-rate__smile">Смайлики</p>
-        <p class="page-rate__comments">Комментарии</p>
+        <div class="page-rate__title">База<span class="page-rate__price">1,99 USD</span></div>
+        <div class="page-rate__pink-filter">Розовый фильтр</div>
+        <div class="page-rate__smile">Смайлики</div>
+        <div class="page-rate__comments">Комментарии</div>
       </li>
       <li class="page-rate__item">
-        <p class="page-rate__title">СТАНДАРТ <span class="page-rate__price">3,99 USD</span></p>
-        <p class="page-rate__pink-filter">Розовый фильтр</p>
-        <p class="page-rate__smile">Смайлики</p>
-        <p class="page-rate__comments">Комментарии</p>
+        <div class="page-rate__title">СТАНДАРТ<span class="page-rate__price">3,99 USD</span></div>
+        <div class="page-rate__pink-filter">Розовый фильтр</div>
+        <div class="page-rate__smile">Смайлики</div>
+        <div class="page-rate__comments">Комментарии</div>
       </li>
       <li class="page-rate__item">
-        <p class="page-rate__title">СТАНДАРТ <span class="page-rate__price">3,99 USD</span></p>
-        <p class="page-rate__pink-filter">Розовый фильтр</p>
-        <p class="page-rate__smile">Смайлики</p>
-        <p class="page-rate__comments">Комментарии</p>
+        <div class="page-rate__title">АНЛИМ<span class="page-rate__price">9,99 USD</span></div>
+        <div class="page-rate__pink-filter">Розовый фильтр</div>
+        <div class="page-rate__smile">Смайлики</div>
+        <div class="page-rate__comments">Комментарии</div>
       </li>
-    </ul>
+    </ul> -->
+
+    <table class="page-rate__table">
+      <thead>
+        <tr>
+          <th></th>
+          <th><div class="page-rate__table--title-th"><span>База</span><span class="page-rate__table--title-price">1,99 USD</span></div></th>
+          <th><div class="page-rate__table--title-th"><span>СТАНДАРТ</span><span class="page-rate__table--title-price">3,99 USD</span></div></th>
+          <th><div class="page-rate__table--title-th"><span>АНЛИМ</span><span class="page-rate__table--title-price">9,99 USD</span></div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Розовый фильтр</td>
+          <td class="page-rate__table--svg-yes"></td>
+          <td class="page-rate__table--svg-yes"></td>
+          <td class="page-rate__table--svg-yes"></td>
+        </tr>
+        <tr>
+          <td>Смайлики</td>
+          <td class="page-rate__table--svg-no"></td>
+          <td class="page-rate__table--svg-yes"></td>
+          <td class="page-rate__table--svg-yes"></td>
+        </tr>
+        <tr>
+          <td>Комментарии</td>
+          <td class="page-rate__table--svg-no"></td>
+          <td class="page-rate__table--svg-no"></td>
+          <td class="page-rate__table--svg-yes"></td>
+        </tr>
+      </tbody>
+    </table>
+
     <ul class="page-review__nav-list nav-rate">
       <li class="page-review__nav-item">1</li>
       <li class="page-review__nav-item">2</li>
@@ -119,18 +171,25 @@
       <p class="page-footer__contacts-title page-footer--text-br contacts--address">Приезжайте в гости:<a href="" class="page-footer__contacts-address page-footer__contacts-link">ул. Большая
         Конюшенная, 19/8</a></p>
 
-        <div class="page-footer__map"></div>
+        <div class="page-footer__map">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map_desktop.jpg">
+          <source media="(min-width: 660px)" srcset="img/map_tablet.jpg 1x, img/map_tablet@2x.jpg 2x">
+          <img class="page-footer__map--img" srcset="img/map.jpg, img/map@2x.jpg 2x" alt="Место на карте где мы находимся">
+        </picture>
+        </div>
   </div>
   <section class="page-footer__social">
-  <div class="page-footer__logo">логотип</div>
+  <img class="page-footer__logo" width="145" height="40" src="img/logotype-blue-tablet.svg">
+    <span class="visually-hidden">Логотип в футере</span></img>
   <div class="page-footer_social-link">
     <ul class="page-footer_social-link__list">
-      <li class="page-footer_social-link__item">твиттер</li>
-      <li class="page-footer_social-link__item">фейсбук</li>
-      <li class="page-footer_social-link__item">ютуб</li>
+      <li class="page-footer_social-link__item link--twitter"><a href=""><img class="" width="18" height="14" src="img/twitter.svg"><span class="visually-hidden">Twitter</span></a></li>
+      <li class="page-footer_social-link__item link--facebook"><a href=""><img width="9" height="18" src="img/facebook.svg"><span class="visually-hidden">Facebook</span></a></li>
+      <li class="page-footer_social-link__item link--youtube"><a href=""><img width="15" height="13" src="img/youtube.svg"><span class="visually-hidden">Youtube</span></a></li>
     </ul>
   </div>
-  <div class="page-footer__devops">Разработано</div>
+  <div class="page-footer__devops">Разработано <a href=""><img width="27" height="34" src="img/html academy.svg"><span class="visually-hidden">Youtube</span></a></div>
 </section>
 </footer>
 <script>
