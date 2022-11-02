@@ -1,18 +1,33 @@
 .page-review {
   margin: 0 20px;
+  position: relative;
+
+  @media (min-width: $desktop_width) {
+    margin-top: 84px;
+    margin-bottom: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 688px;
+  }
+}
+
+.page-review::before {
+  @media (min-width: $desktop_width) {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    margin-left: -39px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 63px;
+  }
 }
 
 .page-review__item {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet_width) {
-
-  }
-
-  @media (min-width: $desktop_width) {
-
-  }
 }
 
 .page-review__name-author {
@@ -33,7 +48,7 @@
   @media (min-width: $desktop_width) {
     order: 2;
     font-size: 24px;
-}
+  }
 }
 
 .page-review__about-author {
@@ -69,10 +84,6 @@
 
   @media (min-width: $tablet_width) {
     font-size: 18px;
-  }
-
-  @media (min-width: $desktop_width) {
-
   }
 }
 

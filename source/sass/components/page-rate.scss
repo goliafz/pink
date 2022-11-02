@@ -7,7 +7,7 @@
 
 .page-rate::after {
   background-color: $background_special;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   //transform: rotate(5deg);
@@ -39,7 +39,6 @@
 
 .page-rate__item {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 2px 2px;
 }
@@ -59,13 +58,12 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-
 }
 
 .page-rate__title:last-of-type {
   border: 2px solid #283645;
-  border-radius: 0px 1px 0px 0px;
-  background-color: red;
+  border-radius: 0 1px 0 0;
+  background-color: #ff0000;
 }
 
 .page-rate__pink-filter {
@@ -103,10 +101,6 @@
 
   @media (min-width: $tablet_width) {
     padding: 0 20px;
-  }
-
-  @media (min-width: $desktop_width) {
-
   }
 }
 
@@ -202,11 +196,10 @@
     width: 234px;
     height: 59px;
   }
-
 }
 
 .page-rate__table tr:first-of-type td:first-of-type {
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px 0 0 0;
 }
 
 .page-rate__table td:first-of-type {
@@ -214,7 +207,7 @@
 }
 
 .page-rate__table tr:last-of-type td:first-of-type {
-  border-radius: 0px 0px 0px 4px;
+  border-radius: 0 0 0 4px;
 }
 
 .page-rate__table tr:last-of-type td:last-of-type {

@@ -118,11 +118,12 @@
   background-color: transparent;
 
   @media (min-width: $tablet_width) {
-    height: 110px;
+    height: 66px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop_width) {
-    height: 110px;
+    height: 66px;
     //display: none;
   }
 }
@@ -155,7 +156,7 @@
   opacity: 0.3;
 }
 
-@media (max-width: $desktop_width - 1) {
+@media (max-width: $desktop_width) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
@@ -201,12 +202,4 @@
     background-color: $color_text_pink;
     opacity: 0.3;
   }
-}
-
-.main-nav--nojs .main-nav__toggle {
-  //display: none;
-}
-
-.main-nav--nojs .main-nav__list {
-  //position: static;
 }
